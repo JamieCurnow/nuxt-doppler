@@ -2,7 +2,7 @@
   "name": "nuxt-doppler",
   "version": "0.0.2",
   "description": "Integrate your Doppler secrets into your Nuxt build",
-  "repository": "JamieCurnow/nuxt-doppler",
+  "repository": "https://github.com/JamieCurnow/nuxt-doppler",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -16,6 +16,11 @@
   "types": "./dist/types.d.ts",
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "doppler",
+    "nuxt",
+    "module"
   ],
   "scripts": {
     "prepack": "nuxt-module-build build",
