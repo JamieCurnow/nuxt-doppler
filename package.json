@@ -1,6 +1,6 @@
 {
   "name": "nuxt-doppler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Integrate your Doppler secrets into your Nuxt build",
   "repository": "JamieCurnow/nuxt-doppler",
   "license": "MIT",
@@ -22,18 +22,18 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "release": "npm run dev:prepare && npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "NITRO_ENV_PREFIX=NUXT_ vitest run",
     "test:watch": "vitest watch"
   },
   "dependencies": {
+    "@dopplerhq/node-sdk": "^1.2.0",
     "@nuxt/kit": "^3.8.0",
     "destr": "^2.0.2",
     "scule": "^1.0.0"
   },
   "devDependencies": {
-    "@dopplerhq/node-sdk": "^1.2.0",
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/module-builder": "^0.5.2",
