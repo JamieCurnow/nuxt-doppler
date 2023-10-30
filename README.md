@@ -7,17 +7,13 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-Integrate your Doppler secrets into your Nuxt build for doing amazing things.
-
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-doppler?file=playground%2Fapp.vue) -->
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+Integrate your [Doppler](https://www.doppler.com/) secrets into your Nuxt build to manage all your environment variables and secrets safe, in sync and in one place 🔒
 
 ## Features
 
 <!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Minimal setup
-- 🚠 &nbsp;Secure
+- 🚀 &nbsp;Minimal setup
+- 🔐 &nbsp;Secure
 
 ## Quick Setup
 

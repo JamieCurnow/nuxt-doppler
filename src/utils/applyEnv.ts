@@ -11,14 +11,12 @@ import { snakeCase } from 'scule'
 import destr from 'destr'
 
 // get env prefix
-const _inlineRuntimeConfig = process.env.RUNTIME_CONFIG as any
-const ENV_PREFIX = 'NITRO_'
-const ENV_PREFIX_ALT = _inlineRuntimeConfig?.nitro?.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? '_'
+const ENV_PREFIX = 'NUXT_' // nuxt default
 
 // get the value from the doppler secrets for a given key
 function _getEnv(dopplerSecrets: Record<string, string>, key: string) {
   const envKey = snakeCase(key).toUpperCase()
-  return destr(dopplerSecrets[ENV_PREFIX + envKey] ?? dopplerSecrets[ENV_PREFIX_ALT + envKey])
+  return destr(dopplerSecrets[ENV_PREFIX + envKey])
 }
 
 // check if the input is an object
