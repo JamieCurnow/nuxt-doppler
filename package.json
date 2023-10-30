@@ -1,6 +1,6 @@
 {
   "name": "nuxt-doppler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Integrate your Doppler secrets into your Nuxt build",
   "repository": "https://github.com/JamieCurnow/nuxt-doppler",
   "license": "MIT",
