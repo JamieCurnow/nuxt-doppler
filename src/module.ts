@@ -33,10 +33,18 @@ export default defineNuxtModule({
     // only get these secrets if they are in the only array
     const onlySecrets = only?.length ? only.join(',') : undefined
 
-    const secretsListResponse = await doppler.secrets.list(project, config, {
-      accepts: 'application/json',
-      secrets: onlySecrets
-    })
+    let secretsListResponse
+
+    try {
+      secretsListResponse = await doppler.secrets.list(project, config, {
+        accepts: 'application/json',
+        secrets: onlySecrets
+      })
+    } catch (error) {
+      throw new Error(`Doppler module error: ${JSON.stringify(error, null, 2)}`)
+    }
+
+    if (!secretsListResponse) return
 
     if (debug) console.log('Doppler secrets list response', JSON.stringify(secretsListResponse))
 
