@@ -44,7 +44,7 @@ export default defineNuxtModule({
       throw new Error(`Doppler module error: ${JSON.stringify(error, null, 2)}`)
     }
 
-    if (!secretsListResponse) return
+    if (!secretsListResponse) throw new Error('Doppler secrets list response empty')
 
     if (debug) console.log('Doppler secrets list response', JSON.stringify(secretsListResponse))
 
