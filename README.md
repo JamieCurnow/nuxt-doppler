@@ -20,14 +20,7 @@ Integrate your [Doppler](https://www.doppler.com/) secrets into your Nuxt build 
 1. Add `nuxt-doppler` dependency to your project
 
 ```bash
-# Using pnpm
-pnpm add -D nuxt-doppler
-
-# Using yarn
-yarn add --dev nuxt-doppler
-
-# Using npm
-npm install --save-dev nuxt-doppler
+npx nuxi@latest module add doppler
 ```
 
 2. Add `nuxt-doppler` to the `modules` section of `nuxt.config.ts`
