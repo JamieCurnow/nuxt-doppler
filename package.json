@@ -1,6 +1,6 @@
 {
   "name": "nuxt-doppler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Integrate your Doppler secrets into your Nuxt build",
   "author": "Jamie Curnow <jamie@hiyield.co.uk>",
   "contributors": [
