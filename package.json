@@ -2,7 +2,18 @@
   "name": "nuxt-doppler",
   "version": "1.0.2",
   "description": "Integrate your Doppler secrets into your Nuxt build",
-  "repository": "https://github.com/JamieCurnow/nuxt-doppler",
+  "author": "Jamie Curnow <jamie@hiyield.co.uk>",
+  "contributors": [
+    "Logan Ford <logan@hiyield.co.uk>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamieCurnow/nuxt-doppler.git"
+  },
+  "homepage": "https://github.com/JamieCurnow/nuxt-doppler#readme",
+  "bugs": {
+    "url": "https://github.com/JamieCurnow/nuxt-doppler/issues"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {
